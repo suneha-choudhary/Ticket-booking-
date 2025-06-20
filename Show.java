@@ -29,13 +29,11 @@ public class Show{
                 return false;
             }
             if(seats[seat - 1]){
-                // System.out.println("Seat " + seat + " is already booked.");
                 return false;
             }
         }
         for(int seat : seatNumbers){
             seats[seat - 1] = true;
-            // System.out.println("Seat " + seat + " booked successfully");
         }
         return true;
     }
